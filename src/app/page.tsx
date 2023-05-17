@@ -1,5 +1,7 @@
-import Button from "@/components/Button";
 import { User } from "lucide-react";
+import nlwLogo from '../assets/nlw-spacetime-logo.svg';
+
+import Image from "next/image";
 
 const Home: React.FC = () => {
   return (
@@ -24,6 +26,23 @@ const Home: React.FC = () => {
             <span className="underline">Crie sua conta</span> e salve suas memórias!
           </p>
         </a>
+
+        <div className="space-y-5">
+          <Image src={nlwLogo} alt="NLW Logo"/>
+          <div className="max-w-[26.25rem] space-y-1">
+            <h1 className="text-4xl font-bold leading-tight text-gray-50">Sua cápsula do tempo</h1>
+            <p className="text-lg leading-relaxed">Colecione momentos marcantes da sua jornada e compartilhe (se quiser) com o mundo!</p>
+          </div>
+          <a href="#" 
+          className="uppercase inline-block rounded-full bg-green-500 px-5 py-3 font-alt text-sm leading-none text-black hover:bg-green-600">
+            CADASTRAR LEMBRANçA
+          </a>
+        </div>
+
+        <p className="text-sm leading-relaxed text-gray-200">
+          Feito com 💜 por  <a target="blank" rel="noreferrer" href="#" className="underline hover:text-green-500 transition-colors">Leonardo Oliveira</a> 
+        </p>
+
 
       </section >
 
